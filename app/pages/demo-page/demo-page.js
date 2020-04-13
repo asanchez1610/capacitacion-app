@@ -3,8 +3,10 @@ import { html } from 'lit-element';
 import '@cells-components/cells-template-paper-drawer-panel';
 import '@bbva-web-components/bbva-header-main';
 import '@capacitacion-cells/navigation-menu';
+import '@capacitacion-cells/capacitacion-behavior';
 
-class DemoPage extends CellsPage {
+const utilBehavior = CellsBehaviors.capacitacionBehavior;
+class DemoPage extends utilBehavior(CellsPage) {
   static get is() {
     return 'demo-page';
   }
