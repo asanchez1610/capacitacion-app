@@ -19,14 +19,19 @@
     "onlyLitElements": true
   },
   "app_properties": {
+      "services": {},
+      "ctts": {},
+      "events": {
+        "menuSelectedOption": "selected-option-menu"
+      },
       "optionsMenu": [
         {
           "name": "Lista de personas",
-          "page": "personas"
+          "page": "demo"
         },
         {
           "name": "Crear personas",
-          "page": "create"
+          "page": "demo"
         }
       ]
   }
