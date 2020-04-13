@@ -35,12 +35,7 @@ class CreatePage extends utilBehavior(CellsPage) {
   render() {
     return html`
     <style>${this.constructor.shadyStyles}</style>
-
-      <cells-template-paper-drawer-panel mode="seamed">
-        <div slot="app__main">
-           <div class = "container">Pagina de creacion</div>
-        </div>
-     </cells-template-paper-drawer-panel>`;
+    <div class = "">Pagina de creacion</div>`;
   }
 
   static get shadyStyles() {

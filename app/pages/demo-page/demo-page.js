@@ -35,11 +35,8 @@ class DemoPage extends utilBehavior(CellsPage) {
   render() {
     return html`
     <style>${this.constructor.shadyStyles}</style>
-      <cells-template-paper-drawer-panel mode="seamed">
-        <div slot="app__main"  >
-          <div class = "container">Pagina Inicial</div>
-        </div>
-     </cells-template-paper-drawer-panel>`;
+    <div class = "container">Pagina Inicial</div>
+    `
   }
 
   static get shadyStyles() {
