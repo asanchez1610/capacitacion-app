@@ -6,9 +6,9 @@ import '@capacitacion-cells/navigation-menu';
 import '@capacitacion-cells/capacitacion-behavior';
 
 const utilBehavior = CellsBehaviors.capacitacionBehavior;
-class DemoPage extends utilBehavior(CellsPage) {
+class CreatePage extends utilBehavior(CellsPage) {
   static get is() {
-    return 'demo-page';
+    return 'create-page';
   }
 
   constructor() {
@@ -35,21 +35,22 @@ class DemoPage extends utilBehavior(CellsPage) {
   render() {
     return html`
     <style>${this.constructor.shadyStyles}</style>
+
       <cells-template-paper-drawer-panel mode="seamed">
-        <div slot="app__main"  >
-          <div class = "container">Pagina Inicial</div>
+        <div slot="app__main">
+           <div class = "container">Pagina de creacion</div>
         </div>
      </cells-template-paper-drawer-panel>`;
   }
 
   static get shadyStyles() {
     return `
-      .container {
-        margin-top:50px;
-      }
+    .container {
+      margin-top:50px;
+    }
     `;
   }
 }
 
-window.customElements.define(DemoPage.is, DemoPage);
+window.customElements.define(CreatePage.is, CreatePage);
 

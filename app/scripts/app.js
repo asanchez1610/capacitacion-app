@@ -4,7 +4,7 @@
   window.CellsPolymer.start({
     routes: {
       'demo': '/',
-      'another': '/another'
+      'create': '/create'
     }
   });
 }(document));

@@ -40,7 +40,10 @@
 <body class="fullbleed layout vertical loading">
   <div id="splash"></div>
   <div id="app__content"></div>
-
+  <div id="cells-template-__cross">
+      <!-- cross components shared on all pages -->
+      <navigation-menu></navigation-menu>
+  </div>
   <!-- for a11y purposes -->
   <div id="announcer" aria-live="polite"></div>
 
