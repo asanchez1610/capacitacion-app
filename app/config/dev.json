@@ -31,11 +31,11 @@
       },
       "optionsMenu": [
         {
-          "name": "Lista de personas",
+          "name": "Crear personas",
           "page": "demo"
         },
         {
-          "name": "Crear personas",
+          "name": "Listar personas",
           "page": "create"
         }
       ]

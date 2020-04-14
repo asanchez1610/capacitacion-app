@@ -55,7 +55,6 @@ class DemoPage extends utilBehavior(CellsPage) {
               <div class = "bodyPanel">
                 <capacitacion-form @crear-persona-event = ${this.registrarPersona} ></capacitacion-form>
               </div>
-
             </div>
 
           </div>

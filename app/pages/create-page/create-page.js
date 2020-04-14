@@ -4,6 +4,7 @@ import '@cells-components/cells-template-paper-drawer-panel';
 import '@bbva-web-components/bbva-header-main';
 import '@capacitacion-cells/navigation-menu';
 import '@capacitacion-cells/capacitacion-behavior';
+import '@capacitacion-cells/capacitacion-list';
 
 const utilBehavior = CellsBehaviors.capacitacionBehavior;
 class CreatePage extends utilBehavior(CellsPage) {
@@ -21,8 +22,14 @@ class CreatePage extends utilBehavior(CellsPage) {
     };
   }
 
+  async loadData() {
+    let data = await fetch(`${this.services.host}/${this.services.endPoints.personas}`).then(response => response.json());
+    this.shadowRoot.querySelector('capacitacion-list').data = data;
+  }
+
   onPageEnter() {
     console.log('Page loaded');
+    this.loadData();
   }
 
   onPageLeave() {
@@ -34,13 +41,20 @@ class CreatePage extends utilBehavior(CellsPage) {
     <style>${this.constructor.shadyStyles}</style>
       <cells-template-paper-drawer-panel mode="seamed">
         <div slot="app__main">
-           <div class = "container">Pagina de creacion</div>
+           <div class = "container">
+
+            <capacitacion-list></capacitacion-list>
+
+          </div>
         </div>
      </cells-template-paper-drawer-panel>`;
   }
 
   static get shadyStyles() {
     return `
+    * {
+      font-family: var(--cells-fontDefault, sans-serif);
+    }
     .container {
       margin-top:50px;
     }
