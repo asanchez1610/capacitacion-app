@@ -13,9 +13,6 @@ class CreatePage extends utilBehavior(CellsPage) {
 
   constructor() {
     super();
-    this.updateComplete.then(() => {
-      document.querySelector('navigation-menu').options = window.AppConfig.optionsMenu;
-    });
   }
 
   static get properties() {
@@ -35,7 +32,11 @@ class CreatePage extends utilBehavior(CellsPage) {
   render() {
     return html`
     <style>${this.constructor.shadyStyles}</style>
-    <div class = "">Pagina de creacion</div>`;
+      <cells-template-paper-drawer-panel mode="seamed">
+        <div slot="app__main">
+           <div class = "container">Pagina de creacion</div>
+        </div>
+     </cells-template-paper-drawer-panel>`;
   }
 
   static get shadyStyles() {

@@ -47,6 +47,12 @@
   <!-- for a11y purposes -->
   <div id="announcer" aria-live="polite"></div>
 
+  <script>
+   document.addEventListener('WebComponentsReady', ()=>{
+      document.querySelector('navigation-menu').options = window.AppConfig.optionsMenu
+    });
+  </script>
+
   <script src="vendor/bowser.min.js"></script>
   <script src="scripts/app-bootstrap.js"></script>
   <script src="scripts/app.js" async></script>

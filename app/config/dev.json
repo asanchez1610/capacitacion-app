@@ -19,7 +19,12 @@
     "onlyLitElements": true
   },
   "app_properties": {
-      "services": {},
+      "services": {
+          "host": "http://localhost:8086/api/v1",
+          "endPoints": {
+            "personas": "/personas"
+          }
+        },
       "ctts": {},
       "events": {
         "menuSelectedOption": "selected-option-menu"

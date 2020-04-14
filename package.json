@@ -8,6 +8,7 @@
     "@bbva-web-components/bbva-convergence-theme": "^1.0.6",
     "@bbva-web-components/bbva-header-main": "^1.0.9",
     "@capacitacion-cells/capacitacion-behavior": "git+https://github.com/asanchez1610/capacitacion-behavior.git",
+    "@capacitacion-cells/capacitacion-form": "git+https://github.com/asanchez1610/capacitacion-form.git",
     "@capacitacion-cells/navigation-menu": "git+https://github.com/asanchez1610/navigation-menu.git#1.2",
     "@cells-components/cells-template-paper-drawer-panel": "^1.0.9",
     "@cells-components/coronita-icons": "^1.0.15",
